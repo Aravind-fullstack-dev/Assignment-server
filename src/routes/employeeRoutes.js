@@ -11,6 +11,7 @@ const {
 } = require('../controllers/employeeController');
 const { getDashboardStats } = require('../models/dashboardStats');
 const { verifyToken } = require('../middleware/authMiddleware');
+
 // Dashboard stats route
 router.get('/dashboard-stats',verifyToken, getDashboardStats);
 
